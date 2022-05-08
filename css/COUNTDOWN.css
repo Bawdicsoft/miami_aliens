@@ -1,0 +1,70 @@
+html {
+  overflow-x: hidden;
+}
+
+/* general styling */
+:root {
+  --smaller: 0.75;
+}
+
+.na-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.na-container .container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.na-container h1 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.na-container li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.na-container li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.na-container .na-container .emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.na-container .emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .na-container h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  .na-container li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  .na-container li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+p#AuctionNo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
